@@ -8,11 +8,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: const Text("Catalog App"),centerTitle: true,),
       body: Container(
-        child: Center(child: Text("my app"),),
+        child: const Center(child: Text("my app"),),
       ),
-      drawer: Drawer(elevation: 10,),
+      drawer: const Drawer(elevation: 10,),
     );
   }
 }
