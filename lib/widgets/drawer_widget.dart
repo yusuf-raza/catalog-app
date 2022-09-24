@@ -12,6 +12,7 @@ class MyDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: const [
           DrawerHeader(
+            //curve: Curves.easeIn,
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                   currentAccountPicture: CircleAvatar(
