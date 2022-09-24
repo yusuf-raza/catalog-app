@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyAppTheme {
-  static final ThemeData _myLightThemeData = ThemeData(
+  static ThemeData myLightThemeData(BuildContext context) => ThemeData(
       primarySwatch: Colors.deepPurple,
       textTheme: GoogleFonts.latoTextTheme(),
       appBarTheme: const AppBarTheme(
@@ -11,11 +11,11 @@ class MyAppTheme {
           iconTheme: IconThemeData(color: Colors.black),
           titleTextStyle: TextStyle(color: Colors.black, fontSize: 20)));
 
-  static ThemeData get myLightTheme => _myLightThemeData;
+  //static ThemeData get myLightTheme => _myLightThemeData;
 
-  static final ThemeData _myDarkThemeData = ThemeData(
+  static ThemeData myDarkThemeData(BuildContext context) => ThemeData(
     brightness: Brightness.dark,
   );
 
-   static ThemeData get myDarkTheme => _myDarkThemeData;
+   //static ThemeData get myDarkTheme => _myDarkThemeData;
 }

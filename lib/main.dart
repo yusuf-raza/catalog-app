@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Catalog App',
       //custom light theme
-      theme: MyAppTheme.myLightTheme,
+      theme: MyAppTheme.myLightThemeData(context),
       //theme mode set to system theme
       //themeMode: ThemeMode.system,
       //custom dark theme
-      darkTheme: MyAppTheme.myDarkTheme,
+      //darkTheme: MyAppTheme.myDarkThemeData(context),
       initialRoute: MyRoutes.homePageRoute,
       routes: {
         MyRoutes.homePageRoute: (context) => const HomePage(),
